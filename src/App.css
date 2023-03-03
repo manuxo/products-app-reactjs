@@ -3,3 +3,9 @@
     background: rgb(254, 254, 254);
     margin-top: 2rem;
 }
+
+.product-card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.25s ease-out;
+}

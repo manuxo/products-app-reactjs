@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { MdKeyboardArrowRight } from 'react-icons/md';
+
 function ProductListItem(props) {
     const { product } = props;
     return (
@@ -7,6 +10,9 @@ function ProductListItem(props) {
                 <div className="card-body">
                     <h5 className="card-title">{product.title}</h5>
                     <p className="card-text">{product.description}</p>
+                </div>
+                <div className="card-footer">
+                    <Link style={{ textDecoration: 'none' }} to={`/products/${product.id}`}><span style={{ fontSize: '1.5rem' }}>Details <MdKeyboardArrowRight /></span></Link>
                 </div>
             </div>
         </div>

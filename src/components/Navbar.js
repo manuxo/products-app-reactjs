@@ -2,7 +2,7 @@ import productLogo from '../img/product_logo.svg';
 
 function Navbar() {
     return (<>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
                     <img src={productLogo} alt="" width="30" height="24" className="d-inline-block align-text-top" />
